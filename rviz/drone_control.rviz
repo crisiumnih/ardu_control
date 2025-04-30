@@ -1,0 +1,31 @@
+---
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_common/Grid
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Color: [0.5, 0.5, 0.5]
+      Alpha: 0.5
+    - Class: rviz_common/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Robot Description Topic: /robot_description
+    - Class: rviz_common/Pose
+      Enabled: true
+      Name: DronePose
+      Topic: /ap/geopose/filtered
+      Color: [1.0, 0.0, 0.0]
+      Alpha: 0.7
+      Shaft Length: 0.5
+      Head Length: 0.3
+  Enabled: true
+  Name: Visualization Manager
+  Tools:
+    - Class: rviz_common/MoveCamera
+  Value: true
+Global Options:
+  Background Color: [0.0, 0.0, 0.0]
+  Fixed Frame: world
+  Frame Rate: 30
